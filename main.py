@@ -21,19 +21,6 @@ def AllItems():
         print(item, " ", my_dict[item])
 
 
-def getAllItemsWithCount():
-    my_dict = {}
-    file = open("groceries.txt", "r")
-    lines = file.readlines()
-    for item in lines:
-        item = item.strip()
-        if item in my_dict:
-            my_dict[item] = my_dict[item] + 1
-        else:
-            my_dict[item] = 1
-    return my_dict
-
-
 def SpecificItems(v):
     my_dict = {}
     file = open("groceries.txt", "r")
