@@ -4,5 +4,7 @@
 
 # Python Assignment
 - Read txt file
-- Count occurences
+- Count all items and occurencesoccurences
+- Retrieve an item from the list with number of occurrences
+- Present text-based graphical representationof the list with occurences
 - String formatting
