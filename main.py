@@ -7,6 +7,7 @@ import string
 from collections import Counter
 
 
+# Prints out all items and number of occurrences
 def AllItems():
     my_dict = {}
     file = open("groceries.txt", "r")
@@ -21,6 +22,7 @@ def AllItems():
         print(item, " ", my_dict[item])
 
 
+# Retrieves specific item and number of purchases
 def SpecificItems(v):
     my_dict = {}
     file = open("groceries.txt", "r")
@@ -40,6 +42,7 @@ def SpecificItems(v):
     return
 
 
+# Retrieves grocery list with graphical representation of number of items
 def Histogram():
     my_dict = {}
     file = open("groceries.txt", "r")
@@ -53,7 +56,6 @@ def Histogram():
     for item in my_dict:
         num = my_dict[item]
         symbol = "*" * num
-        # print('{}  {}'.format(item, symbol))
         print('{:20s} {:20s}'.format(item, symbol))
 
     return
